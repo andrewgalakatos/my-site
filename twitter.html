@@ -20,11 +20,55 @@
   gtag('config', 'G-40KPDCHZ8L');
 </script>
 
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#">Project name</a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid">
+  <head>This is the main section</head>
+
   <div class="row-fluid">
     <div class="span2">
       <!--Sidebar content-->
     </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <ul class="nav navbar-nav">
+      <li><a href="new.html" class="navbar-brand">
+    <img src="logo.png"></a></li>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="price.html">Price</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="socials"><g:plusone annotation="inline" width="150"></g:plusone></li>
+              <li class="socials"><div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div></li>
+              <li class="socials"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+           </ul>
+          </li>
+      </ul>
+    </nav>
     <div class="span10">
       <!--Body content-->
     </div>
