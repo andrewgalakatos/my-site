@@ -17,9 +17,7 @@
         </select>
         <button id="my-btn">Go!</button>
     </div>
-    <div>
-        <h2>Selected Stock: <span id="my-stock-display">TODO</span></h1>
-    </div>
+
     <script type="text/javascript">
         console.log("Hello this is a review...")
         // todo: respond to button clicks by:
@@ -28,12 +26,21 @@
 
         var myButton = document.getElementById("my-btn")
 
+        var UserName = document.getElementById("my-user-name")
+        var stockSelector = document.getElementById("my-stock-selector")
+
         function handleClick(){
             console.log("You Clicked Me")
+            console.log("Name:", UserName.value)
+            console.log("Stock Symbol:", stockSelector.value)
         }
 
-        handleClick()
 
+        myButton.addEventListener("click", handleClick, false)
+      
+    <div>
+        <h2>Selected Stock: <span id="my-stock-display">stockSelector.value</span></h1>
+    </div>
     </script>
 </body>
 </html>
